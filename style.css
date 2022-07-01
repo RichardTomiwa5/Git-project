@@ -1,3 +1,230 @@
+
+
+
 body{
-     background-color: black;
+     background-color: rgb(58, 57, 57);
+     color: white;
+max-width: 100%;
+justify-items: right;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
+
+div.header{
+     position: relative;
+     text-align: center;
+     background-color: #1f2a2c;
+     margin: 2%;
+     margin-top: 0px;
+     border-radius: 10px;
+     background-image: url("img/work\ 1.jpg");
+     background-position: center;
+}
+
+
+   
+
+div.header h2:hover{
+     background-color:#073e47;
+     box-shadow:10px 10px 50px #121725;
+}
+
+div.header img{
+     width:50%;
+     height: 300px;
+     border-radius: 10px;
+     opacity: 0.5;
+     
+}
+
+
+h2{
+     position: relative;
+     left:580px;
+     display: inline-block;
+     border: 1px solid white;
+     padding: 5px;
+}
+
+div.header> h2{
+     position: absolute;
+     top: 50%;
+     left: 2px;
+     transition: 1s;
+     cursor: pointer;
+     border: 1px solid rgb(23, 35, 73);
+} 
+
+
+
+.grid { 
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     grid-gap: 200px;
+     align-items:flex-end;
+     margin: 1%;
+     }
+   .grid > article {
+     border: 1px solid #ccc;
+     box-shadow: 2px 2px 6px 2px  #0000004d;
+     border-radius: 10px;
+     transition: 1s;
+   }
+
+   .grid > article:hover {
+     border: 1px solid #ccc;
+     box-shadow: 10px 10px 7px #0000004d;
+     transform: translateY(-10px);
+   }
+   .grid > article img {
+     max-width: 100%;
+   }
+   .text {
+     padding: 0 20px 20px;
+   }
+   .text > button {
+     background: gray;
+     border: 0;
+     color: white;
+     padding: 10px;
+     width: 100%;
+     transition: 500ms;
+     }
+
+     .text > button:hover{
+          background-color:#0e0f0f;
+          box-shadow:10px 10px 50px #121725;
+     }
+
+
+     div.wrapper{
+          padding-top: 20px ;
+          margin: 30px;
+          border: 2px solid whitesmoke;
+          border-radius: 10px;
+          background-color: #2c2a2a;
+          box-shadow: 20px 20px 20px  rgb(12, 11, 11);
+     }
+
+
+     
+ div.header li{
+      margin: 20px;
+     display: inline-block;
+     margin-right:100px ;
+     cursor: pointer;
+     position: relative;
+     left: 25%;
+     transition: 1s;
+}
+
+
+div.header li:hover{
+    background-color:#1a2224;
+    box-shadow:10px 20px 30px #121725; 
+}
+
+
+div.header ul{
+     width: 100%;
+     margin-top: 0px;
+     position: fixed;
+     background-color: black;
+     z-index: 2;
+     top: 0%;
+     left: 0%;
+}
+
+
+    div.header>ul>li> a{
+          color: white;
+             text-decoration: none;
+
+     }
+
+     div.header>ul>li>a:hover{
+          background: rgb(15, 15, 48);
+     }
+     footer{
+          border: 2px solid;
+          border-radius: 10px;
+          margin: 2%;
+          padding: 2%;
+     }
+
+     footer>ul{
+          text-align: center;
+     }
+
+     footer>ul>li{
+          display: inline-block;
+          margin: 20px;
+     }
+
+
+
+     footer>ul>li>a>img{
+          width: 50px;
+          transition: 500ms;
+     }
+
+     footer>ul>li>a>img:hover{
+          animation: bounce 0.8s ease;
+     }
+
+     label.label{
+          max-height: 70px;
+          background-image: url("img/black.jpg");
+          background-position: center ;
+          position: fixed;
+          z-index: 3;
+          top: -2%;
+          left: 0%;
+          font-size: 35px;
+          font-weight: bold;
+          color: white;
+          line-height: 80px;
+     }
+
+    /* .swiper{
+          width: 50%;
+          height: fit-content;
+          display: inline;
+     }
+
+div.swiper-slide>img{
+     width: 10px;
+}
+
+     div.swiper-slide p{
+         
+          text-align: center;
+          display: inline-block;
+     }
+
+     div.swiper-slide>img{
+width: 500px;
+     }
+
+     */
+
+     @keyframes bounce{
+          0%{
+               transform: scale(1, 1) translateY(0);
+          }
+
+          10%{
+               transform: scale(1.1, .9) translateY(0);
+          }
+
+          30%{
+               transform: scale(0.9, 1.1) translateY(-30px);
+          }
+          50%{
+               transform: scale(1, 1) translateY(0);
+          }
+
+          100%{
+               transform: scale(1, 1) translateY(0);
+          }
+     }
