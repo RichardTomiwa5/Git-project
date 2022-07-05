@@ -10,6 +10,10 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 }
 
+h1{
+     font-size: large;
+}
+
 div.header{
      position: relative;
      text-align: center;
