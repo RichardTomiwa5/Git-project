@@ -11,6 +11,10 @@ font:'segoe UI';
 
 }
 
+form input{
+border-radius: 5px;
+}
+
 p{
      font-size: 10px;
 }
