@@ -1,1 +1,1 @@
-
+const c="hi there"
